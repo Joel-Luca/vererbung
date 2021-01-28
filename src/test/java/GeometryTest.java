@@ -53,4 +53,11 @@ public class GeometryTest {
         assertEquals("My Text", textRectangle.getText());
     }
 
+    @Test
+    void circle_getPosition_CorrectPositionGetReturned(){
+        Circle circle = new Circle(new Point(1,1),2);
+        Point actualPoint = circle.getPosition();
+        assertEquals(new Point(1, 1), actualPoint);
+    }
+
 }

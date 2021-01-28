@@ -16,4 +16,13 @@ public class Point {
     public int getY() {
         return y;
     }
+
+    @Override
+    public boolean equals(Object a) {
+        if(a instanceof Point) {
+            Point point = (Point) a;
+            return point.getY() == y && point.getX() == x;
+        }
+        return false;
+    }
 }

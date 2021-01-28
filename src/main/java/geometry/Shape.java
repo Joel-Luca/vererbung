@@ -7,19 +7,19 @@ public abstract class Shape {
     protected abstract double calculateArea();
     protected abstract double calculateCircumference();
 
-    protected Point getPosition() {
+    public Point getPosition() {
         return position;
     }
 
-    protected void setPosition(Point position) {
+    public void setPosition(Point position) {
         this.position = position;
     }
 
-    protected Color getFill() {
+    public Color getFill() {
         return fill;
     }
 
-    protected void setFill(Color fill) {
+    public void setFill(Color fill) {
         this.fill = fill;
     }
 }
